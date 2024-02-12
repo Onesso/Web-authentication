@@ -1,16 +1,19 @@
 import React from "react";
+import style from "./"
 
 export default function App() {
   return (
     <>
       <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top mt-2">
+
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
               Frank Were
             </a>
           </div>
-          <div style={{ fontFamily: "Poppins" }}>
+
+          <div>
             <a className="navbar-brand" href="#">
               Home
             </a>
