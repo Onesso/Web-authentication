@@ -1,59 +1,61 @@
-.Nav-style {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.radius {
-  border-radius: 30px;
-  align-items: center;
+.nav {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  
-}
-
-.name {
-  letter-spacing: 1px;
-  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border-radius: 30px;
 }
-.name-1 {
-  text-transform: uppercase;
+.frank {
+  box-shadow: none;
   letter-spacing: 1px;
-  font-size: 16px;
+  align-items: center;
+  font-weight: bold;
+  display: block;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 5px;
 }
 
-/* .name:hover {
-  transition: transform 0.9s;
-  text-decoration: underline;
-  bottom: -18px;
-} */
+.stylo {
+  box-shadow: none;
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
 
-a,
-a:link,
-a:visited {
-  color: rgb(0, 0, 0);
-  
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.stylo li {
   position: relative;
-  padding-bottom: 5px; /* The distance between text and underline */
 }
 
-a::before {
+.stylo li::before {
   content: "";
   position: absolute;
-  width: 100%;
-  top: 0;
+  left: 0;
   bottom: 0;
-  background-image: linear-gradient(
-    90deg,
-    rgb(0, 0, 0),
-    rgb(0, 0, 0)
-  ); /* underline color */
-  background-size: 0 2px; /* vertical size of underline */
-  background-repeat: no-repeat;
-  background-position: left bottom; /* start position of underline */
-  transition: background-size 0.3s ease-in; /* duration and timing style of animation */
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.2s ease-out;
 }
 
-a:hover::before {
-  background-size: 100% 2px;
+.stylo li:hover::before {
+  width: 100%;
+}
+
+.toggle-bar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
