@@ -45,13 +45,14 @@ export default function App() {
           </ul>
         </div>
       </nav>
+      
 
-      <div>
-        <button className="toggle-bar">
+      <div className="toggle-bar">
+        <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
-            height="16"
+            height="60"
             fill="currentColor"
             class="bi bi-moon"
             viewBox="0 0 16 16"
